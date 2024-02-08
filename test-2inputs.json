@@ -1,26 +1,26 @@
 {
     "faasnap": {
         "log_level": "Warning",
-        "base_path": "",
+        "base_path": "/home/shared/faasnap-snapshot/",
         "kernels": {
-            "v4.14": "",
+            "v4.14": "/home/shared/faasnap-kernel/",
             "sanpage": ""
         },
         "images": {
-            "debian": ""
+            "debian": "/home/shared/faasnap-test/rootfs/"
         },
         "executables": {
-            "vanilla": "",
-            "uffd": ""
+            "vanilla": "/home/shared/faasnap-firecracker/build/cargo_target/x86_64-unknown-linux-musl/debug",
+            "uffd": "/home/shared/faasnap-firecracker/build/cargo_target/x86_64-unknown-linux-musl/debug"
         },
         "redis_host": "",
         "redis_passwd": ""
     },
 
-    "home_dir": "",
-    "host": "http://<ip>:8080",
-    "trace_api": "http://<ip>:9411/api/v2/trace",
-    "test_dir": "",
+    "home_dir": "/home/shared/faasnap-test/",
+    "host": "http://132.229.129.219:8080",
+    "trace_api": "http://132.229.129.219:9411/api/v2/trace",
+    "test_dir": "/home/shared/faasnap-snapshot/",
 
     "repeat": 1,
     "parallelism": [1],
